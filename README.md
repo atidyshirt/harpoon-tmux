@@ -31,7 +31,7 @@ Key Bindings that can be setup via the lazy.nvim `config` hook:
 ```lua
 vim.keymap.set("n", "gt", function() harpoon_tmux.go_to_terminal(1) end)
 vim.keymap.set("n", "gy", function() harpoon_tmux.go_to_terminal(2) end)
-vim.keymap.set("n", "<leader><space>m", function() harpoon.ui:toggle_quick_menu(harpoon:list(tmux_list_name)) end)
+vim.keymap.set("n", "<leader><space>m", function() harpoon.ui:toggle_quick_menu(harpoon:list('tmux')) end)
 vim.keymap.set("n", "<leader><space>j", function() harpoon:list('tmux'):select(1) end)
 vim.keymap.set("n", "<leader><space>k", function() harpoon:list('tmux'):select(2) end)
 vim.keymap.set("n", "<leader><space>l", function() harpoon:list('tmux'):select(3) end)
